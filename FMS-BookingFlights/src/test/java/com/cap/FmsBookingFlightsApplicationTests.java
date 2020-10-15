@@ -32,8 +32,7 @@ class FmsBookingFlightsApplicationTests {
 		
 		
 				
-		//Assertions.assertEquals(book.toString(),book1.toString());
-		//Assertions.assertEquals(book1.getPassengerName(),"yamini");
+		
 		Assertions.assertEquals(book.getUserId(),book1.getUserId());
 		
 

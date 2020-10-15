@@ -9,25 +9,24 @@ Created Date                                        05-10-20
 */
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
 //import javax.persistence.OneToOne;
 import javax.persistence.Table;
 @Entity
 @Table(name = "bookinglist")
-@SequenceGenerator(name="seq", initialValue=100, allocationSize=3)
+//@SequenceGenerator(name="seq", initialValue=100, allocationSize=3)
 public class BookingDetails implements Serializable{
+	
 	@Id
+	
 	@Column(length = 5)
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq")
+	//@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq")
     private String bookingId;
 	@Column(length = 5)
 	private int userId;
 	@Column(length = 5)
 	private int noofSeats;
-	@Column(length = 10)
+	@Column(length = 15)
 	private String passengerName;
 	
 	
@@ -69,8 +68,7 @@ public class BookingDetails implements Serializable{
 	public BookingDetails() {
 		super();
 	}
-
-	
 	
 }
+
 
